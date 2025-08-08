@@ -1,0 +1,265 @@
+/* General Styling */
+:root {
+    --primary-color: #3366CC;
+    --secondary-color: #2c2c2c;
+    --background-color: #1a1a1a;
+    --text-color: #f0f0f0;
+    --card-bg-color: #252525;
+}
+
+body {
+    font-family: 'Poppins', sans-serif;
+    background-color: var(--background-color);
+    color: var(--text-color);
+    margin: 0;
+    line-height: 1.6;
+}
+
+h1, h2 {
+    color: var(--primary-color);
+    font-weight: 600;
+}
+
+h2 {
+    border-bottom: 2px solid var(--primary-color);
+    padding-bottom: 10px;
+    margin-bottom: 30px;
+    font-size: 2rem;
+}
+
+h2 i {
+    margin-right: 15px;
+}
+
+section {
+    padding: 60px 0;
+}
+
+/* Header */
+.project-header {
+    background: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url('https://images.unsplash.com/photo-1552519507-da3b142c6e3d?q=80&w=2070&auto=format&fit=crop') no-repeat center center/cover;
+    height: 40vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    color: #fff;
+    overflow: hidden; /* --- Add this to hide the overflow --- */
+    position: relative; /* --- Add this for positioning context --- */
+}
+
+/* Add this new block right after .project-header */
+.project-header::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-image: inherit;
+    background-size: cover;
+    background-position: center;
+    animation: kenburns 20s ease-in-out infinite; /* --- This line applies the animation --- */
+    z-index: -1;
+}
+
+.project-header h1 {
+    font-size: 3.5rem;
+    margin: 0;
+    color: #fff;
+}
+
+.project-header .subtitle {
+    font-size: 1.2rem;
+    color: #ddd;
+}
+
+/* Main Container */
+.project-container {
+    max-width: 1200px;
+    margin: -60px auto 0 auto; /* Pulls content up over header */
+    padding: 0 20px;
+    background: var(--card-bg-color);
+    border-radius: 12px;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.5);
+    position: relative;
+    z-index: 10;
+    padding-bottom: 40px;
+}
+
+/* Back Button */
+.back-button {
+    display: inline-block;
+    background-color: var(--primary-color);
+    color: #fff;
+    padding: 10px 20px;
+    border-radius: 5px;
+    text-decoration: none;
+    margin: 30px 0;
+    transition: background-color 0.3s ease;
+}
+
+.back-button:hover {
+    background-color: #597dc6;
+}
+
+/* Overview Section */
+.overview-content {
+    display: flex;
+    gap: 30px;
+    align-items: center;
+}
+
+.overview-text {
+    flex: 2;
+}
+
+.overview-image {
+    flex: 1;
+}
+
+.overview-image img {
+    width: 100%;
+    border-radius: 8px;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.3);
+}
+
+/* Key Features Section */
+.features-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 25px;
+}
+
+.feature-item {
+    background-color: var(--secondary-color);
+    padding: 30px;
+    border-radius: 8px;
+    text-align: center;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.feature-item:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 0 15px var(--primary-color);
+}
+
+.feature-item i {
+    font-size: 2.5rem;
+    color: var(--primary-color);
+    margin-bottom: 15px;
+}
+
+/* Tech Stack Section */
+/* Tech Stack Section */
+.tech-icons {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 20px;
+}
+
+.tech-icon {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 10px;
+}
+
+/* เพิ่มโค้ดส่วนนี้เข้าไป */
+.tech-icon img {
+    background-color: white; /* --- กำหนดให้พื้นหลังเป็นสีขาว --- */
+    border-radius: 50%;     /* ทำให้ขอบเป็นวงกลม (ปรับได้) */
+    padding: 8px;           /* เพิ่มระยะห่างข้างใน */
+    height: 60px;
+    width: 60px;            /* กำหนดความกว้างให้เท่ากับความสูง */
+    object-fit: contain;    /* ทำให้รูปภาพพอดีกับกรอบ */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* เพิ่มเงาเล็กน้อย */
+    transition: transform 0.3s ease;
+}
+
+.tech-icon img:hover {
+    transform: scale(1.1);
+}
+
+.tech-icon span {
+    font-size: 0.9rem;
+    color: #ccc;
+}
+
+
+/* Gallery Section */
+/* Project Gallery Section - Horizontal Scroll */
+.gallery-container {
+    overflow-x: auto; /* --- ทำให้สามารถเลื่อนแนวนอนได้ --- */
+    padding: 20px 0;
+    -webkit-overflow-scrolling: touch; /* ทำให้เลื่อนลื่นบนมือถือ */
+}
+
+.gallery-track {
+    display: flex; /* --- จัดเรียงรูปภาพเป็นแนวนอน --- */
+    gap: 20px; /* ระยะห่างระหว่างรูป */
+    width: max-content; /* ทำให้ track ขยายตามจำนวนรูป */
+    padding-left: 20px; /* เพิ่มระยะห่างเริ่มต้น */
+    padding-right: 20px; /* เพิ่มระยะห่างตอนท้าย */
+}
+
+.gallery-item {
+    width: 250px; /* กำหนดความกว้างของแต่ละรูป */
+    flex-shrink: 0; /* --- ป้องกันไม่ให้รูปถูกบีบอัด --- */
+    border-radius: 36px;
+    overflow: hidden;
+    position: relative;
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.3);
+    transition: transform 0.3s ease;
+}
+
+.gallery-item:hover {
+    transform: translateY(-5px);
+}
+
+.gallery-item img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    display: block;
+    /* mix-blend-mode: multiply;  */
+}
+
+.gallery-caption {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    background: linear-gradient(to top, rgba(0, 0, 0, 0.8), transparent);
+    color: #fff;
+    padding: 25px 15px 15px 15px;
+    text-align: center;
+    font-weight: 500;
+}
+
+/* --- ปรับแต่ง Scrollbar ให้สวยงาม (สำหรับ Chrome/Safari) --- */
+.gallery-container::-webkit-scrollbar {
+    height: 8px;
+}
+
+.gallery-container::-webkit-scrollbar-track {
+    background: #2c2c2c;
+    border-radius: 10px;
+}
+
+.gallery-container::-webkit-scrollbar-thumb {
+    background-color: var(--primary-color);
+    border-radius: 10px;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+    .overview-content {
+        flex-direction: column;
+    }
+
+    .project-header h1 {
+        font-size: 2.5rem;
+    }
+}
