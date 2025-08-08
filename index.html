@@ -1,0 +1,313 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Portfolio "Website</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+    <link rel="stylesheet" href="../front-end/css/style.css">
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+</head>
+
+<body>
+    <!-- navbar -->
+    <nav>
+    <div class="nav-container">
+        <div class="logo" data-aos="zoom-in" data-aos-duration="1500">
+            <span>Ikkyu</span>
+        </div>
+        <div class="links">
+            <div class="link" data-aos="fade-up" data-aos-duration="1500" data-aos-delay="100"><a href="#home">Home</a></div>
+            <div class="link" data-aos="fade-up" data-aos-duration="1500" data-aos-delay="200"><a href="#about">About</a></div>
+            <div class="link" data-aos="fade-up" data-aos-duration="1500" data-aos-delay="300"><a href="#skills">Skills</a></div>
+            <div class="link" data-aos="fade-up" data-aos-duration="1500" data-aos-delay="400"><a href="#services">Project</a></div>
+            <div class="link" data-aos="fade-up" data-aos-duration="1500" data-aos-delay="500"><a href="#contact">Contact</a></div>
+        </div>
+        <i class="fa-solid fa-bars hamburg" onclick="hamburg()"></i>
+    </div>
+    <div class="dropdown">
+        <div class="links">
+            <a href="#home">Home</a>
+            <a href="#about">About</a>
+            <a href="#skills">Skills</a>
+            <a href="#services">Project</a>
+            <a href="#contact">Contact</a>
+            <i class="fa-solid fa-xmark cancel" onclick="cancel()"></i>
+        </div>
+    </div>
+</nav>
+    <section id="home">
+        <div class="main-container">
+            <div class="image" data-aos="zoom-out" data-aos-duration="1500">
+                <img src="img/Ikkyu.jpg" alt="">
+            </div>
+            <div class="content">
+                <h1 data-aos="fade-left" data-aos-duration="1500" data-aos-delay="700">
+                    Hey I'm
+                    <span>Chitipat Siriwiwattanakul</span>
+                </h1>
+                <div class="typewriter" data-aos="fade-right" data-aos-duration="1500" data-aos-delay="800">
+                    I'm a
+                    <span class="typewriter-text"></span>
+                    <label for=""></label>
+                </div>
+                <p data-aos="flip-down" data-aos-duration="1500" data-aos-delay="900">I have a passion for
+                    cybersecurity, web development, and UX/UI design, with a commitment to creating secure and efficient
+                    digital systems.</p>
+                <div class="social-links">
+                    <a href="#" data-aos="fade-up" data-aos-duration="1500" data-aos-delay="1300">
+                        <i class="fa-brands fa-github"></i>
+                    </a>
+                    <a href="#" data-aos="fade-up" data-aos-duration="1500" data-aos-delay="1400">
+                        <i class="fa-brands fa-facebook"></i>
+                    </a>
+                    <a href="#" data-aos="fade-up" data-aos-duration="1500" data-aos-delay="1500">
+                        <i class="fa-brands fa-instagram"></i>
+                    </a>
+                    <a href="#" data-aos="fade-up" data-aos-duration="1500" data-aos-delay="1500">
+                        <i class="fa-brands fa-google"></i>
+                    </a>
+                </div>
+                <div class="btn" data-aos="fade-up" data-aos-duration="1500" data-aos-delay="1800">
+                    <button id="viewWorkBtn">View My Work</button>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- About Section start -->
+    <section class="about" id="about">
+        <div class="content">
+            <div class="title" data-aos="fade-up" data-aos-duration="1500"><span>About Me</span></div>
+            <div class="about-details">
+                <div class="left" data-aos="fade-right" data-aos-duration="1500" data-aos-delay="200">
+                    <img src="/front-end/img/Ikkyu.jpg" alt="">
+                </div>
+                <div class="right">
+                    <div class="topic" data-aos="fade-left" data-aos-duration="1500" data-aos-delay="200">
+                        My Passion</div>
+                    <p data-aos="flip-down" data-aos-duration="1500" data-aos-delay="400">
+                        I am an enthusiastic intern who is eager to learn and grow through real-world experience. I take
+                        responsibility seriously and work well in a team. Although I’m still new to the professional
+                        field, I am committed to improving myself and contributing positively to any tasks assigned to
+                        me.
+                    </p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- My skill Section Start -->
+    <section class="skills" id="skills">
+        <div class="content">
+            <div class="title" data-aos="fade-up" data-aos-duration="1200">
+                <span>My Skills</span>
+            </div>
+            <div class="skills-details">
+                <div class="skills-images" data-aos="fade-up" data-aos-duration="1200">
+                    <div class="grid-skills">
+                        <div class="skill-img"><img src="/front-end/img/html.png" alt="HTML"></div>
+                        <div class="skill-img"><img src="/front-end/img/css.png" alt="CSS"></div>
+                        <div class="skill-img"><img src="/front-end/img/tailwind.png" alt="Tailwind CSS"></div>
+                        <div class="skill-img"><img src="/front-end/img/javascript.png" alt="JavaScript"></div>
+                        <div class="skill-img"><img src="/front-end/img/csharp.png" alt="C#"></div>
+                        <div class="skill-img"><img src="/front-end/img/python.png" alt="Python"></div>
+                        <div class="skill-img"><img src="/front-end/img/mysql.png" alt="MySQL"></div>
+                        <div class="skill-img"><img src="/front-end/img/vue.jpg" alt="Vue.js"></div>
+                        <div class="skill-img"><img src="/front-end/img/nodejs.png" alt="Node.js"></div>
+                        <div class="skill-img"><img src="/front-end/img/react.png" alt="React"></div>
+                        <div class="skill-img"><img src="/front-end/img/mongoDB.png" alt="MongoDB"></div>
+                        <div class="skill-img"><img src="/front-end/img/Figma.png" alt="Figma"></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- My Services Section Start -->
+    <section class="services" id="services">
+    <div class="content" data-aos="zoom-in" data-aos-duration="1500">
+        <div class="title">
+            <span>My Project</span>
+        </div>
+        <div class="boxes">
+
+            <a href="hertzRental.html" class="project-link" target="_blank" rel="noopener noreferrer">
+                <div class="box" data-aos="fade-up" data-aos-duration="1500" data-aos-delay="200">
+                    <div class="icon">
+                        <i class="fas fa-car"></i>
+                    </div>
+                    <div class="topic">Hertz Rental</div>
+                    <p>This project is about creating a daily car rental system.</p>
+                </div>
+            </a>
+
+            <a href="studentLoan.html" class="project-link" target="_blank" rel="noopener noreferrer">
+                <div class="box" data-aos="fade-up" data-aos-duration="1500" data-aos-delay="300">
+                    <div class="icon">
+                        <i class="fas fa-user"></i>
+                    </div>
+                    <div class="topic">StudentLoan</div>
+                    <p>Develop a loan application system for the student loan fund.</p>
+                </div>
+            </a>
+
+            <a href="mfuWIFI.html" class="project-link" target="_blank" rel="noopener noreferrer">
+                <div class="box" data-aos="fade-up" data-aos-duration="1500" data-aos-delay="400">
+                    <div class="icon">
+                        <i class="fas fa-wifi"></i>
+                    </div>
+                    <div class="topic">MFU WI-FI</div>
+                    <p>Develop a facial recognition system via ThaID to connect with the Wi-Fi use for Mae Fah Luang University and Mae Fah Luang Hospital.</p>
+                </div>
+            </a>
+
+        </div>
+    </div>
+</section>
+
+    <!-- Contact Section -->
+    <section class="contact" id="contact">
+        <div class="content" data-aos="zoom-in" data-aos-duration="1500">
+            <div class="title">
+                <span>Contact Me</span>
+            </div>
+            <div class="text">
+                <div class="contact-info ">
+                    <p data-aos="fade-right" data-aos-duration="1500" data-aos-delay="200">
+                        <i class="fas fa-envelope"></i> Gmail: chitipat140547@gmail.com
+                    </p>
+
+                    <p data-aos="fade-left" data-aos-duration="1500" data-aos-delay="300">
+                        <i class="fas fa-phone"></i> Phone: 063-025-3111
+                    </p>
+
+                    <p data-aos="fade-right" data-aos-duration="1500" data-aos-delay="400">
+                        <i class="fab fa-facebook"></i> Facebook: <a
+                            href="https://www.facebook.com/chitipat.siriwiwattanakul/" target="_blank">Ikkyu
+                            Chitipat</a>
+                    </p>
+
+                    <p data-aos="fade-left" data-aos-duration="1500" data-aos-delay="500">
+                        <i class="fab fa-instagram"></i> Instagram: <a href="https://www.instagram.com/_iikkyuu/"
+                            target="_blank">@_iikkyuu</a>
+                    </p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+    <!-- Footer Section -->
+    <footer>
+        <div class="text">
+            <span>Created By
+                <a href="#">Chitipat Siriwiwattanakul</a>
+                | &#169; 2025 All Right Reseverd</span>
+        </div>
+    </footer>
+
+
+    <script>
+        // เลือก element ที่จะให้แสดงผลข้อความ
+        const typewriterTextElement = document.querySelector('.typewriter-text');
+
+        // รายการคำที่ต้องการให้พิมพ์
+        const words = ["Computer Engineering Student"];
+
+        // ตัวแปรสำหรับจัดการสถานะ
+        let wordIndex = 0; // ลำดับของคำใน array
+        let charIndex = 0; // ลำดับของตัวอักษรในคำ
+        let isDeleting = false; // สถานะว่ากำลังลบหรือกำลังพิมพ์
+
+        function type() {
+            const currentWord = words[wordIndex];
+            const speed = isDeleting ? 100 : 200; // ความเร็วในการพิมพ์/ลบ
+
+            // ถ้ากำลังลบ ให้ลบทีละตัวอักษร
+            if (isDeleting) {
+                typewriterTextElement.textContent = currentWord.substring(0, charIndex - 1);
+                charIndex--;
+            }
+            // ถ้ากำลังพิมพ์ ให้เพิ่มทีละตัวอักษร
+            else {
+                typewriterTextElement.textContent = currentWord.substring(0, charIndex + 1);
+                charIndex++;
+            }
+
+            // เงื่อนไขในการสลับสถานะ
+            // 1. ถ้าพิมพ์คำจนจบแล้ว -> ให้เปลี่ยนเป็นสถานะ "ลบ"
+            if (!isDeleting && charIndex === currentWord.length) {
+                isDeleting = true;
+                // หน่วงเวลาก่อนเริ่มลบ
+                setTimeout(type, 2000);
+                return;
+            }
+            // 2. ถ้าลบคำจนหมดแล้ว -> เปลี่ยนเป็นสถานะ "พิมพ์" และไปคำถัดไป
+            else if (isDeleting && charIndex === 0) {
+                isDeleting = false;
+                wordIndex++;
+                // ถ้าวนครบทุกคำแล้ว ให้กลับไปที่คำแรก
+                if (wordIndex === words.length) {
+                    wordIndex = 0;
+                }
+            }
+
+            // เรียกใช้ฟังก์ชัน type วนซ้ำตามความเร็วที่กำหนด
+            setTimeout(type, speed);
+        }
+
+        // เริ่มการทำงานของ Typewriter เมื่อหน้าเว็บโหลดเสร็จ
+        document.addEventListener('DOMContentLoaded', type);
+
+    </script>
+
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+
+    <script>
+        AOS.init();
+    </script>
+
+    <script>
+        document.getElementById('viewWorkBtn').addEventListener('click', function () {
+            document.getElementById('services').scrollIntoView({ behavior: 'smooth' });
+        });
+    </script>
+
+    <script>
+        AOS.init();
+    </script>
+
+    <script>
+        document.getElementById('viewWorkBtn').addEventListener('click', function () {
+            document.getElementById('services').scrollIntoView({ behavior: 'smooth' });
+        });
+    </script>
+
+    <script>
+        // เลือก element ของ dropdown menu
+        const dropdown = document.querySelector('.dropdown');
+
+        // ฟังก์ชันสำหรับแสดง dropdown menu
+        function hamburg() {
+            dropdown.style.transform = 'translateY(0)';
+        }
+
+        // ฟังก์ชันสำหรับซ่อน dropdown menu
+        function cancel() {
+    dropdown.style.transform = 'translateY(-100%)'; // <-- แก้จาก -500px เป็น -100%
+    }
+
+        // (แนะนำ) ทำให้เมนูปิดอัตโนมัติเมื่อคลิกลิงก์
+        const dropdownLinks = document.querySelectorAll('.dropdown .links a');
+        dropdownLinks.forEach(link => {
+            link.addEventListener('click', cancel);
+        });
+    </script>
+
+</body>
+</html>
+</body>
+
+</html>
